@@ -23,7 +23,7 @@ export function SignIn() {
       <Image
         style={styles.image}
         source={IllustrationImg}
-        resizeMode="stretch"
+        resizeMode="center"
       />
 
       <View style={styles.content}>
