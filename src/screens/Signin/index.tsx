@@ -9,6 +9,7 @@ import { ButtonIcon } from '../../components/ButtonIcon'
 import IllustrationImg from '../../assets/illustration.png'
 
 import { styles } from './styles'
+import { Background } from '../../components/Background'
 
 export function SignIn() {
   const navegation = useNavigation();
@@ -18,35 +19,37 @@ export function SignIn() {
   }
 
   return (
-    <View
-      style={styles.container}>
+    <Background>
+      <View
+        style={styles.container}>
 
-      <Image
-        style={styles.image}
-        source={IllustrationImg}
-        resizeMode="stretch"
-      />
-
-      <View style={styles.content}>
-
-        <Text style={styles.title}>
-          Conecte-se {'\n'}
-          e organize {'\n'}
-          jogatinas
-        </Text>
-
-        <Text style={styles.subtitle}>
-          Crie grupos para jogar seus games {'\n'}
-          favoritos com seus amigos
-        </Text>
-
-        <ButtonIcon
-          title='Entrar em discord'
-          onPress={handleSignIn}
+        <Image
+          style={styles.image}
+          source={IllustrationImg}
+          resizeMode="stretch"
         />
 
-      </View>
+        <View style={styles.content}>
 
-    </View>
+          <Text style={styles.title}>
+            Conecte-se {'\n'}
+            e organize {'\n'}
+            jogatinas
+          </Text>
+
+          <Text style={styles.subtitle}>
+            Crie grupos para jogar seus games {'\n'}
+            favoritos com seus amigos
+          </Text>
+
+          <ButtonIcon
+            title='Entrar em discord'
+            onPress={handleSignIn}
+          />
+
+        </View>
+
+      </View>
+    </Background>
   )
 }
