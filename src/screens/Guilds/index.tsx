@@ -27,6 +27,36 @@ export function Guilds({ handleGuildSelect }: Props) {
       name: 'Vádio',
       icon: 'has.png',
       owner: false
+    }, {
+      id: '652',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
+    }, {
+      id: '4212',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
+    }, {
+      id: '232',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
+    }, {
+      id: '211',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
+    }, {
+      id: '32',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
+    }, {
+      id: '22',
+      name: 'Vádio',
+      icon: 'has.png',
+      owner: false
     }
   ]
   return (
@@ -42,7 +72,9 @@ export function Guilds({ handleGuildSelect }: Props) {
           />
         )}
         showsHorizontalScrollIndicator={false}
-        ItemSeparatorComponent={() => <ListDivider />}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
+        ListHeaderComponent={() => <ListDivider isCentered />}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
         style={styles.guilds}
       />
 
